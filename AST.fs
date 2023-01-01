@@ -157,6 +157,6 @@ module AST =
             | Not ->
                 ELiteral (Bool (not (asBool expr)))
             | Plus ->
-                ELiteral (Int (+ (asInt expr)))
+                ELiteral (Int (+ asInt expr))
             | Minus ->
-                ELiteral (Int (- (asInt expr)))
+                ELiteral (Int (- asInt expr))
